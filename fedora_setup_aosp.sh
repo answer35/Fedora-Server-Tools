@@ -69,6 +69,8 @@ dnf -y install libxslt
 dnf -y install zlib.*
 # xz compatable libraries
 dnf -y install lzma
+# fedora package libxcrypt-compat provides ubuntu libcrypt.so.1 library
+dnf -y install libxcrypt-compat
 
 dnf -y install xz
 # packages below with the same name as ubuntu and fedora
