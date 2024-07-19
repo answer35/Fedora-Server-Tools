@@ -44,8 +44,8 @@ dnf -y install readline-devel.*
 
 # fedora packages zlibrary* replaces lib32z1-dev package in ubuntu
 
-dnf -y install   zlibrary.*
-dnf -y install   zlibrary-devel.*
+dnf -y install zlibrary.*
+dnf -y install zlibrary-devel.*
 # fedora packages below repalace ubuntu ncurses-devel ncurses-c++-libs
 
 dnf -y install ncurses.*
@@ -84,10 +84,10 @@ dnf -y install gperf pngcrush schedtool
 dnf -y install rclone
 
 # install python 2.7
-dnf-y install python2.7
+dnf -y install python3.12
 
-# symlink 2.7
-ln -s /usr/bin/python2.7 /usr/bin/python
+# symlink 3.12
+ln -s /usr/bin/python3.12 /usr/bin/python
 
 
 echo 'fedora build environment update successful'
